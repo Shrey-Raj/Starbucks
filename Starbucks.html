@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarBucks</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    ::-webkit-scrollbar {
+      display: block;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /* border: 9px solid turquoise; */
+      height: 100vh;
+      overflow-y: hidden;
+      /* font-family: 'Josefin Sans', sans-serif; */
+    }
+    .cont {
+      /* border: 2px solid rgb(254, 9, 9); */
+      margin: 5%;
+      height: 80%;
+      box-shadow: 2px 2px 10px 1px rgba(32, 30, 30, 0.647);
+    }
+    .header {
+      /* border: 2px solid rgb(22, 223, 45); */
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar {
+      /* border: 2px solid blue; */
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 35%;
+      font-size: 15px;
+      height: 5%;
+      position: relative;
+      top: 10px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+     .navbar li:first-child{
+      background-color: #017143;
+      color: white;
+      border-radius: 10px;
+      /* width: 65px; */
+      padding:4px;
+      
+    } 
+    .navbar li:hover{
+      background-color: #017142c9;
+      color: white;
+      border-radius: 10px;
+      padding: 4px;
+      transform: translateY(-2px);
+    }
+    .logo {
+      height: 50px;
+      width: 50px;
+      position: relative;
+      margin: 0% 5%;
+    }
+
+    .navbar li {
+      list-style: none;
+      font-size: 12px;
+      transition: all 0.2s ease-in-out;
+
+    }
+    .content {
+      /* border: 2px solid rebeccapurple; */
+      height: inherit;
+      display: flex;
+      /*
+        flex-direction: column;
+        justify-content: center; */
+      margin: 5%;
+    }
+    .contentleft {
+      /* border: 2px solid rgb(8, 3, 3); */
+      width: 60%;
+      height: 100%;
+    }
+    .contentleft p {
+      margin: 4% 0;
+      font-size: 20px;
+      line-height: 155%;
+      word-spacing: 2px;
+      /* text-align: center; */
+    }
+    .contentleft h2 {
+      word-spacing: 4px;
+      font-size: 42px;
+    }
+    .contentleft h2 span {
+      font-size: 52px;
+      color: #017143;
+    }
+    .contentright {
+      /* border: 2px solid firebrick; */
+      width: 50%;
+      height: 70vh;
+      background-image: url("images/green coffee.png");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      transform: translate(7%, -10%);
+
+      z-index: -1;
+    }
+    .content button {
+      width: 100px;
+      height: 25px;
+      border-radius: 10px;
+      background-color: #017142da;
+      color: white;
+      border: none;
+    }
+    button a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 1px;
+      margin: 6px;
+    }
+    .footer {
+      /* border: 2px solid forestgreen; */
+      width: 50%;
+      /* height: 10%; */
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      column-gap: 30px;
+      transform: translateY(-110%);
+    }
+    .footer img {
+      width: 50px;
+      height: 70px;
+      transition: all 0.3s ease-in-out;
+    }
+    .footerimg3,
+    .footerimg2 {
+      transform: rotate(-8deg);
+    }
+    .footer img:hover{
+      transform: translateY(-10%);
+      box-shadow: 1px 1px 10px 2px rgb(132, 239, 18) ;
+    }
+    .circle {
+      z-index: -2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #017143;
+      clip-path: circle(600px at right 800px);
+    }
+    .contentleft span{
+      animation: changeTextColor 10s ease-in-out 1s infinite;
+      transition: all 0.3s ;
+    }
+    @keyframes changeTextColor {
+      0% {
+        color: rgb(103, 169, 103);
+      }
+      25% {
+        color: rgb(89, 178, 89);
+      }
+      50% {
+        color: rgb(60, 135, 60);
+      }
+      75% {
+        color: rgb(32, 102, 32);
+      }
+      100% {
+        color: rgb(15, 81, 15);
+      }
+
+
+    }
+    
+
+
+  </style>
+
+  <body>
+    <div class="circle"></div>
+    <div class="cont">
+      <div class="header">
+        <img src="images/starbucks logo.png" alt="" class="logo" />
+
+        <ul class="navbar">
+          <li><a href=""></a>HOME</li>
+          <li><a href=""></a>ABOUT</li>
+          <li><a href=""></a>WHAT'S NEW</li>
+          <li><a href=""></a>CONTACT</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <!-- <div class="content-circle"></div> -->
+        <div class="contentleft">
+          <h2>It's not just Coffee <br />It's <span>StarBucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio
+            pariatur maxime! Facere minus, in deserunt quo recusandae distinctio
+            voluptatum quia illum quaerat consequuntur quibusdam, culpa pariatur
+            vero expedita numquam Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Necessitatibus, quaerat.
+          </p>
+          <button><a href="">Learn More</a></button>
+        </div>
+
+        <div class="contentright">
+          <!-- <img src= alt="" class="bigimage"> -->
+        </div>
+      </div>
+
+      <div class="footer">
+        <img class="footerimg1" src="images/green coffee.png" alt="" />
+        <img class="footerimg2" src="images/pink coffee.png" alt="" />
+        <img class="footerimg3" src="images/red coffee.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
